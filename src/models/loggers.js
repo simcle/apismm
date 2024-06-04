@@ -5,6 +5,8 @@ export const loggerInsert = async (body) => {
     const insert_at = moment.unix(body.datetime).format('YYYY-MM-DD h:mm:ss')
     const ph_1 = body.ph_1
     const temp_1 = body.temp_1
+    const cod_J1 = body.cod_J1
+    const cod_J2 = body.cod_J2
     const cod_1 = body.cod_1
     const cod_2 = body.cod_2
     const cod_3 = body.cod_3
@@ -21,6 +23,8 @@ export const loggerInsert = async (body) => {
     const sql = `INSERT INTO loggers(
         ph_1,
         temp_1,
+        cod_J1,
+        cod_J2,
         cod_1,
         cod_2,
         cod_3,
@@ -38,6 +42,8 @@ export const loggerInsert = async (body) => {
     ) VALUES (
         '${ph_1}',
         '${temp_1}',
+        '${cod_J1},
+        '${cod_J2},
         '${cod_1}',
         '${cod_2}',
         '${cod_3}',
