@@ -110,6 +110,8 @@ export const loggerGet = async (body) => {
         sql = `SELECT 
         AVG(ph_1) as ph_1, 
         AVG(temp_1) as temp_1, 
+        AVG(cod_j1) as cod_j1, 
+        AVG(cod_j2) as cod_j2, 
         AVG(cod_1) as cod_1, 
         AVG(cod_2) as cod_2, 
         AVG(cod_3) as cod_3, 
@@ -173,6 +175,8 @@ export const loggerExport = async (body) => {
         sql = `SELECT 
         ROUND(ph_1, 2) as ph_1, 
         ROUND(temp_1, 2) as temp_1, 
+        ROUND(cod_j1, 2) as cod_j1, 
+        ROUND(cod_j2, 2) as cod_j2, 
         ROUND(cod_1, 2) as cod_1, 
         ROUND(cod_2, 2) as cod_2, 
         ROUND(cod_3, 2) as cod_3, 
@@ -193,6 +197,8 @@ export const loggerExport = async (body) => {
         sql = `SELECT 
         ROUND(AVG(ph_1), 2) as ph_1, 
         ROUND(AVG(temp_1), 2) as temp_1, 
+        ROUND(AVG(cod_j1), 2) as cod_j1, 
+        ROUND(AVG(cod_j2), 2) as cod_j2, 
         ROUND(AVG(cod_1), 2) as cod_1, 
         ROUND(AVG(cod_2), 2) as cod_2, 
         ROUND(AVG(cod_3), 2) as cod_3, 
