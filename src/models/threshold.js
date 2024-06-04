@@ -8,6 +8,8 @@ export const thresholdGet = async () => {
 export const thresholdInsert = async (body) => {
     const min_ph_1 = body.min_ph_1
     const min_temp_1 = body.min_temp_1
+    const min_cod_j1 = body.min_cod_j1
+    const min_cod_j2 = body.min_cod_j2
     const min_cod_1 = body.min_cod_1
     const min_cod_2 = body.min_cod_2
     const min_cod_3 = body.min_cod_3
@@ -23,6 +25,8 @@ export const thresholdInsert = async (body) => {
     const min_debit_2 = body.min_debit_2
     const max_ph_1 = body.max_ph_1
     const max_temp_1 = body.max_temp_1
+    const max_cod_j1 = body.max_cod_j1
+    const max_cod_j2 = body.max_cod_j2
     const max_cod_1 = body.max_cod_1
     const max_cod_2 = body.max_cod_2
     const max_cod_3 = body.max_cod_3
@@ -42,6 +46,8 @@ export const thresholdInsert = async (body) => {
         sql = `UPDATE thresholds SET 
             min_ph_1 = '${min_ph_1}',
             min_temp_1 = '${min_temp_1}',
+            min_cod_j1 = '${min_cod_j1}',
+            min_cod_j2 = '${min_cod_j2}',
             min_cod_1 = '${min_cod_1}',
             min_cod_2 = '${min_cod_2}',
             min_cod_3 = '${min_cod_3}',
@@ -57,6 +63,8 @@ export const thresholdInsert = async (body) => {
             min_debit_2 = '${min_debit_2}',
             max_ph_1 = '${max_ph_1}',
             max_temp_1 = '${max_temp_1}',
+            max_cod_j1 = '${max_cod_j1}',
+            max_cod_j2 = '${max_cod_j2}',
             max_cod_1 = '${max_cod_1}',
             max_cod_2 = '${max_cod_2}',
             max_cod_3 = '${max_cod_3}',
