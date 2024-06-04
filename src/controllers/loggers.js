@@ -8,6 +8,7 @@ export const insertLogger = async (req, res) => {
         await threshold(req.body)
         res.status(200).json('OK')
     } catch (error) {
+        console.log(error)
         res.status(400).send(error)
     }
 }

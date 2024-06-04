@@ -2,6 +2,7 @@ import dbPool from "../config/database.js";
 import moment from "moment";
 
 export const loggerInsert = async (body) => {
+    console.log(body)
     const insert_at = moment.unix(body.datetime).format('YYYY-MM-DD h:mm:ss')
     const ph_1 = body.ph_1
     const temp_1 = body.temp_1
@@ -23,8 +24,8 @@ export const loggerInsert = async (body) => {
     const sql = `INSERT INTO loggers(
         ph_1,
         temp_1,
-        cod_J1,
-        cod_J2,
+        cod_j1,
+        cod_j2,
         cod_1,
         cod_2,
         cod_3,
@@ -42,8 +43,8 @@ export const loggerInsert = async (body) => {
     ) VALUES (
         '${ph_1}',
         '${temp_1}',
-        '${cod_J1},
-        '${cod_J2},
+        '${cod_J1}',
+        '${cod_J2}',
         '${cod_1}',
         '${cod_2}',
         '${cod_3}',
