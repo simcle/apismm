@@ -66,6 +66,8 @@ const migrate = async () => {
         min_debit_2 DECIMAL(8,4) DEFAULT NULL,
         max_ph_1 DECIMAL(8,4) DEFAULT NULL,
         max_temp_1 DECIMAL(8,4) DEFAULT NULL,
+        max_cod_J1 DECIMAL(8,4) DEFAULT NULL,
+        max_cod_J2 DECIMAL(8,4) DEFAULT NULL,
         max_cod_1 DECIMAL(8,4) DEFAULT NULL,
         max_cod_2 DECIMAL(8,4) DEFAULT NULL,
         max_cod_3 DECIMAL(8,4) DEFAULT NULL,

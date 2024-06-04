@@ -11,10 +11,12 @@ export const statisticGet = async (body) => {
             query = `SELECT 
             ROUND(AVG(ph_1), 2) as ph_1, 
             ROUND(AVG(temp_1), 2) as temp_1, 
+            ROUND(AVG(cod_J1), 2) as cod_J1, 
+            ROUND(AVG(cod_J2), 2) as cod_J2, 
             ROUND(AVG(cod_1), 2) as cod_1, 
             ROUND(AVG(cod_2), 2) as cod_2, 
             ROUND(AVG(cod_3), 2) as cod_3, 
-            ROUND(AVG(cod_4), 2) as cod_4, 
+            ROUND(AVG(cod_4), 2) as cod_4,
             ROUND(AVG(cod_5), 2) as cod_5, 
             ROUND(AVG(do_1), 2) as do_1, 
             ROUND(AVG(do_2), 2) as do_2, 
