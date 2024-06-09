@@ -8,6 +8,9 @@
 
 NodeJS v20
 
+Ubah file .env_example menjadi .enve
+
+
 ```bash
   npm install
   npm run server.js or node server.js
