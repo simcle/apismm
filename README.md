@@ -6,14 +6,14 @@
 
 ## Deployment
 
-NodeJS v20
+[NodeJS v20](https://nodejs.org/en)
 
-Ubah file .env_example menjadi .enve
+Ubah file .env_example menjadi .env
 
 
 ```bash
   npm install
-  npm run server.js or node server.js
+  npm run server.js atau node server.js
 ```
 
 
@@ -62,7 +62,7 @@ axios.request(config)
 ```
 
 Response 
-```japascript
+```javascript
 // success
 "OK"
 
