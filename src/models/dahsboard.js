@@ -3,8 +3,8 @@ import dbPool from "../config/database.js";
 export const dashboardData = async () => {
     let sql = `SELECT ROUND(AVG(ph_1), 2) as avg_ph_1, ROUND(MAX(ph_1), 2) as max_ph_1,
         ROUND(AVG(temp_1), 2) as avg_temp_1, ROUND(MAX(temp_1), 2) as max_temp_1,
-        ROUND(AVG(cod_j1), 2) as avg_cod_1, ROUND(MAX(cod_j1), 2) as max_cod_j1,
-        ROUND(AVG(cod_j2), 2) as avg_cod_1, ROUND(MAX(cod_j2), 2) as max_cod_j2,
+        ROUND(AVG(cod_j1), 2) as avg_cod_j1, ROUND(MAX(cod_j1), 2) as max_cod_j1,
+        ROUND(AVG(cod_j2), 2) as avg_cod_j2, ROUND(MAX(cod_j2), 2) as max_cod_j2,
         ROUND(AVG(cod_1), 2) as avg_cod_1, ROUND(MAX(cod_1), 2) as max_cod_1,
         ROUND(AVG(cod_2), 2) as avg_cod_2, ROUND(MAX(cod_2), 2) as max_cod_2,
         ROUND(AVG(cod_3), 2) as avg_cod_3, ROUND(MAX(cod_3), 2) as max_cod_3,
